@@ -36,7 +36,6 @@ print(f"Loaded FAISS index with {index.ntotal} vectors")
 print(f"Loaded {len(id_to_record)} records mapping")
 
 client = OpenAI(api_key=OPENAI_API_KEY)
-
 app = FastAPI(title="Zenodo Semantic Search API")
 
 class SearchResult(BaseModel):
