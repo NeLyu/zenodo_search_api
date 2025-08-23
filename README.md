@@ -1,7 +1,7 @@
 # zenodo_search_api
 
 ![Static Badge](https://img.shields.io/badge/Powered_by-FastApi-009485?logo=fastapi)
-![Static Badge](https://img.shields.io/badge/Powered_by-Zenodo?logo=zenodo)
+![Static Badge](https://img.shields.io/badge/Powered_by-Zenodo-2b7fff?logo=zenodo)
 
 ## API for AI-powered search in Zenodo database
 
