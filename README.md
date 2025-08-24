@@ -13,9 +13,36 @@ Currently, the first demo version has been released. It is available at http://3
 
 For this version a small piece of metadata (~14000 records) was harvested via the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH). The records were processed with OpenAI "text-embedding-3-small" model and the same model is used for vectorization of the queries.
 
-So far, API provides two options for the search: 1) AI-powered search 2) simple keyword search.
+So far, API provides two options for the search: 1) AI-driven search 2) simple keyword search.
 
-#### Next steps:
-- Harvest the full repository and launch the search on that
-- Add more functionality
-- Consider an open-source embeddings model
+## Usage
+**cURL**
+
+AI-driven search
+```
+curl -X GET "http://31.97.180.10/search?query=epidemiology"
+```
+Key-word search
+```
+curl -X GET "http://31.97.180.10/keyword-search?query=epidemiology&limit=10"
+```
+
+**Python**
+
+```
+import requests
+
+url = "http://31.97.180.10/search"
+params = {
+    "query": "epidemiology",
+}
+
+response = requests.get(url, params=params)
+data = response.json()
+```
+
+
+## Planned Improvements
+- Harvest the full repository and enable full-scale search
+- Extend API functionality
+- Explore integration with open-source embedding models
