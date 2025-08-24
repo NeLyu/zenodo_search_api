@@ -29,7 +29,7 @@ curl -X GET "http://31.97.180.10/keyword-search?query=epidemiology&limit=10"
 
 **Python**
 
-```
+```python
 import requests
 
 url = "http://31.97.180.10/search"
